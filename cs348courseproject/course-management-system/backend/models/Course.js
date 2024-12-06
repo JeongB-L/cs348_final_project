@@ -11,4 +11,6 @@ const CourseSchema = new Schema({
   enrolledStudents: [{ type: mongoose.Schema.Types.ObjectId, ref: "Student" }],
 });
 
+CourseSchema.index({ department: 1, level: 1, semester: 1 });
+
 module.exports = mongoose.model("Course", CourseSchema);
