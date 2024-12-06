@@ -1,0 +1,25 @@
+Database Design
+Collections (Tables):
+
+Courses:
+
+_id
+title
+department
+level (e.g., Undergraduate, Graduate)
+semester (e.g., Fall 2023)
+credits
+enrolledStudents (array of student _ids)
+
+Students:
+
+_id
+name
+email
+major
+
+Departments:
+
+_id
+name
+faculty
